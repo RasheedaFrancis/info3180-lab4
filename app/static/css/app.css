@@ -18,17 +18,21 @@ body {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+ul{
+    list-style: none;
+}
 
 .image-grid {
     display: flex;
-    flex-wrap: wrap; /* Allow images to wrap to the next row if needed */
-    justify-content: space-between; /* Align items with space between them */
-    padding: 10px; /* Add padding to the container */
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    padding: 50px; 
+    list-style: none; 
 }
 
-/* Define width for each image */
 .image-grid img {
-    width: calc(33.33% - 20px); /* Ensure each image takes up 1/3 of the container width with some spacing */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 20px; /* Add spacing between images */
+    width: calc(30% - 20px); 
+    height: auto; 
+    margin-bottom: 20px; 
+    border: 2px solid white
 }
