@@ -2,13 +2,11 @@
 
 {% block main %}
     <h1>Uploaded Image Files</h1>
-    <div class="image-grid">
-        {% for i in range(0, images|length, 3) %}
-        <div class="image-row">
-            {% for image in images[i:i+3] %}
-            <img src="{{ url_for('get_image', filename=image) }}">
+    <div class="images">
+            {% for image in images %}
+                <div class="image">
+                    <img src="{{ url_for('get_image', filename=image) }}" class="image-item" width="300">
+                </div>
             {% endfor %}
-        </div>
-        {% endfor %}
     </div>
 {% endblock %}

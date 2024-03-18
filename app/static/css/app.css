@@ -22,17 +22,18 @@ ul{
     list-style: none;
 }
 
-.image-grid {
+.images {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between; 
-    padding: 50px; 
-    list-style: none; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:0%;
+    
 }
 
-.image-grid img {
-    width: calc(30% - 20px); 
-    height: auto; 
-    margin-bottom: 20px; 
-    border: 2px solid white
-}
+.image{
+    width: calc(33.33% - 20px); 
+    margin-bottom: 30px; 
+    padding: 10px; 
+   
+  
+}   
